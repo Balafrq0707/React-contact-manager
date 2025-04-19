@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #0077cc;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button.add {
+  background: #0077cc;
+  color: white;
+}
+
+button.add:hover {
+  background: #005fa3;
+}
+
+button.edit {
+  background: #ffa500;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+button.edit:hover {
+  background: #e69500;
+}
+
+button.delete {
+  background: #e63946;
+  color: white;
+}
+
+button.delete:hover {
+  background: #c22535;
+}
+
+/* Contact List Styles */
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.01);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.contact-email {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.contact-actions {
+  display: flex;
+}
