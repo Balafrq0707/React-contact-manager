@@ -4,13 +4,10 @@ export default function ContactForm({ onAdd, onUpdate, editingContact }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
-  useEffect(() => {
+   useEffect(() => {
     if (editingContact) {
-      setName(editingContact.name || '');
-      setEmail(editingContact.email || '');
-    } else {
-      setName('');
-      setEmail('');
+      setName(editingContact.name);
+      setEmail(editingContact.email);
     }
   }, [editingContact]);
 
